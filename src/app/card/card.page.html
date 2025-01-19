@@ -1,13 +1,71 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>card</ion-title>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="tabs"></ion-back-button>
+  </ion-buttons>
+    <ion-title style="text-align: center; font-weight: bold;">¡Bienvenido a tu perfil!</ion-title>
   </ion-toolbar>
 </ion-header>
+<br>
+<ion-content [fullscreen]="true" >
+  <div>
+    <ion-card style="border-radius: 20px;">
+      <ion-card-header>
+        <ion-card-title style="text-align: center; font-weight: bold;">DavidXRL</ion-card-title>
+        <br>
+        <img style="width: 100%; height:600px; object-fit: cover;" src="https://steamuserimages-a.akamaihd.net/ugc/2310974141604980016/B4EF3A7A2D1772DE26B1A6F51CE33A04FD8BB917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">
+        <br>
+        <ion-chip style="width: 22%; background-color: transparent;">
+          <ion-avatar style="height: 50px; width: 50px;"><img alt="Silhouette of a person's head" src="https://i.pinimg.com/236x/70/09/42/7009428ffddd7ea692bd1d7aa1157f5b.jpg" /></ion-avatar>
+          <ion-label style="font-weight: bold;">David Atzin</ion-label>
+        </ion-chip>
+        <ion-card-subtitle>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, at molestias? Facilis </ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
+  <br>
+  <ion-list style="padding: 20px;">
+    <ion-item>
+      <ion-input label="Input with placeholder" placeholder="Enter company name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Text input" placeholder="Enter text"></ion-input>
+    </ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">card</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-item>
+      <ion-input label="Number input" type="number" placeholder="000"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Password input" type="password" value="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Email input" type="email" placeholder="email@domain.com"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Telephone input" type="tel" placeholder="888-888-8888"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Selecciona una fecha</ion-label>
+      <ion-datetime displayFormat="YYYY-MM-DD"></ion-datetime>
+      <ion-radio-group >
+        <ion-item>
+          <ion-label>Rojo</ion-label>
+          <ion-radio slot="start" value="red"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Azul</ion-label>
+          <ion-radio slot="start" value="blue"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Verde</ion-label>
+          <ion-radio slot="start" value="green"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item>
+  </ion-list>
+
+
 </ion-content>

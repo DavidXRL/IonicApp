@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   standalone:false,
 })
 export class Ventana1Page implements OnInit {
-
+  selectedSegment:string='all';//Valor inicial del segmento
   constructor() { }
 
   ngOnInit() {

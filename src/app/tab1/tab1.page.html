@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title class="ion-text-center">
+      INICIO
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,27 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<div style="margin-top: 2%;text-align: center !important;">
+  <ion-button expand="full" href="card" color="danger">Perfil</ion-button>
+</div>
+
+<div style="margin-top:2%;text-align: center !important;">
+  <ion-segment [scrollable]="true" value="heart">
+    <ion-segment-button value="home" routerLink="/menu">
+      <ion-icon name="home" color="danger">Menú Principal</ion-icon>
+      <ion-label style="margin-top: 10px;">Menú</ion-label>
+    </ion-segment-button>
+      <ion-segment-button value="globe" routerLink="/personajes">
+        <ion-icon name="people" color="danger">Personajes</ion-icon>
+        <ion-label style="margin-top: 10px;">Personajes</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="person" routerLink="/ventana1">
+        <ion-icon name="person" color="danger">Ventana 1</ion-icon>
+        <ion-label style="margin-top: 10px;">Ventana 1</ion-label>
+      </ion-segment-button>
+
+  </ion-segment>
+</div>
+
+  <app-explore-container name="Componentes de una página con Ionic"></app-explore-container>
 </ion-content>

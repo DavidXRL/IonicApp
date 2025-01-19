@@ -7,12 +7,16 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'card',
-    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
-  },
-  {
     path: 'lista',
     loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
+  },
+  {
+    path: 'personajes',
+    loadChildren: () => import('./personajes/personajes.module').then( m => m.PersonajesPageModule)
+  },
+  {
+    path: 'card',
+    loadChildren: () => import('./card/card.module').then( m => m.CardPageModule)
   },
   {
     path: 'login',
@@ -23,24 +27,20 @@ const routes: Routes = [
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
-  },
-  {
-    path: 'personajes',
-    loadChildren: () => import('./personajes/personajes.module').then( m => m.PersonajesPageModule)
-  },
-  {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
-  },
-  {
     path: 'ventana1',
     loadChildren: () => import('./ventana1/ventana1.module').then( m => m.Ventana1PageModule)
   },
   {
     path: 'ventana2',
     loadChildren: () => import('./ventana2/ventana2.module').then( m => m.Ventana2PageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'profile/:id',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   }
 ];
 @NgModule({

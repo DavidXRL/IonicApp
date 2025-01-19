@@ -1,13 +1,332 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>lista</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lista</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">lista</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+
+  <ion-content [fullscreen]="true">
+    <ion-list style="padding: 30px; background-color: rgb(20, 20, 20);">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://oem.com.mx/elsoldetijuana/img/18101355/1644494270/BASE_LANDSCAPE/480/FKw3VqBXwAUcEBx.webp">
+        </ion-avatar>
+        <ion-label>
+          Estefanie
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart" ></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">256</ion-badge>
+        <ion-chip >
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://oem.com.mx/elsoldetijuana/img/18101355/1644494270/BASE_LANDSCAPE/480/FKw3VqBXwAUcEBx.webp" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1j5JLdcrIx4EFMerkfi5TNq4y1GDHSUj9ig&s">
+        </ion-avatar>
+        <ion-label>
+          Andrey Emilio
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">289</ion-badge>
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1j5JLdcrIx4EFMerkfi5TNq4y1GDHSUj9ig&s" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://i.pinimg.com/736x/35/3a/d9/353ad9619623b527859c9ce2d07dbcac.jpg">
+        </ion-avatar>
+        <ion-label>
+          David
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">173</ion-badge>
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://i.pinimg.com/736x/35/3a/d9/353ad9619623b527859c9ce2d07dbcac.jpg" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://images7.memedroid.com/images/UPLOADED322/634084e6e7085.jpeg">
+        </ion-avatar>
+        <ion-label>
+          Gloria
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">242</ion-badge>
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://images7.memedroid.com/images/UPLOADED322/634084e6e7085.jpeg" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://los40.com/resizer/v2/CGYG52C77NNURMA2LZLO63FGLE.jpg?auth=88dbd0108b3751ae693cfc9bec1a5773f78cfb024931d017817c370b49c738f0&quality=70&width=1200&height=900&smart=true">
+        </ion-avatar>
+        <ion-label>
+          Antonio
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">167</ion-badge>
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://los40.com/resizer/v2/CGYG52C77NNURMA2LZLO63FGLE.jpg?auth=88dbd0108b3751ae693cfc9bec1a5773f78cfb024931d017817c370b49c738f0&quality=70&width=1200&height=900&smart=true" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://www.nmas.com.mx/_next/image/?url=https%3A%2F%2Fstatic-live.nmas.com.mx%2Fnmas-news%2Fstyles%2Fcorte_16_9%2Fcloud-storage%2F2023-07%2Fsurge-perrito-cheems-mexicano-memes.jpg%3Fitok%3DKCAFKRGa&w=1920&q=80">
+        </ion-avatar>
+        <ion-label>Alondra</ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">100</ion-badge>
+        <ion-chip>
+          <ion-avatar><img alt="Silhouette of a person's head" src="https://www.nmas.com.mx/_next/image/?url=https%3A%2F%2Fstatic-live.nmas.com.mx%2Fnmas-news%2Fstyles%2Fcorte_16_9%2Fcloud-storage%2F2023-07%2Fsurge-perrito-cheems-mexicano-memes.jpg%3Fitok%3DKCAFKRGa&w=1920&q=80" /></ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+
+      </ion-item>
+
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2UyM2cPChwXKTkJZCKQoghaLBBll4Sdvjtg&s">
+        </ion-avatar>
+        <ion-label>
+          Aimee
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart" ></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">256</ion-badge>
+        <ion-chip >
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2UyM2cPChwXKTkJZCKQoghaLBBll4Sdvjtg&s" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://preview.redd.it/perro-del-meme-v0-4fe53vdwkdsa1.jpg?width=194&format=pjpg&auto=webp&s=b1d5d4c67c688966949cfa97471b81af08909fba">
+        </ion-avatar>
+        <ion-label>
+          Tania
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">289</ion-badge>
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://preview.redd.it/perro-del-meme-v0-4fe53vdwkdsa1.jpg?width=194&format=pjpg&auto=webp&s=b1d5d4c67c688966949cfa97471b81af08909fba" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://stickerly.pstatic.net/sticker_pack/xO3zSKpBX8TqGJtXWsgzg/NSDULD/13/a3ef2e40-cfec-4c6c-9097-ba778929e8fd.png">
+        </ion-avatar>
+        <ion-label>
+          Deyanira
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">173</ion-badge>
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://stickerly.pstatic.net/sticker_pack/xO3zSKpBX8TqGJtXWsgzg/NSDULD/13/a3ef2e40-cfec-4c6c-9097-ba778929e8fd.png" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://stickerly.pstatic.net/sticker_pack/xO3zSKpBX8TqGJtXWsgzg/NSDULD/13/6bdd7d9a-1243-48ca-afb1-ed842b064248.png">
+        </ion-avatar>
+        <ion-label>
+          Adriana
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">242</ion-badge>
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://stickerly.pstatic.net/sticker_pack/xO3zSKpBX8TqGJtXWsgzg/NSDULD/13/6bdd7d9a-1243-48ca-afb1-ed842b064248.png" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://stickerly.pstatic.net/sticker_pack/xO3zSKpBX8TqGJtXWsgzg/NSDULD/13/3dc2fe79-6765-4807-9daf-f9720fe5e8ac.png">
+        </ion-avatar>
+        <ion-label>
+          Andrey
+        </ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">167</ion-badge>
+        <ion-chip>
+          <ion-avatar>
+            <img alt="Silhouette of a person's head" src="https://stickerly.pstatic.net/sticker_pack/xO3zSKpBX8TqGJtXWsgzg/NSDULD/13/3dc2fe79-6765-4807-9daf-f9720fe5e8ac.png" />
+          </ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://i.pinimg.com/236x/03/f4/49/03f449aa2e612c208220e0abee8eee9c.jpg">
+        </ion-avatar>
+        <ion-label>Luis</ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">100</ion-badge>
+        <ion-chip>
+          <ion-avatar><img alt="Silhouette of a person's head" src="https://i.pinimg.com/236x/03/f4/49/03f449aa2e612c208220e0abee8eee9c.jpg" /></ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://i.pinimg.com/236x/70/09/42/7009428ffddd7ea692bd1d7aa1157f5b.jpg">
+        </ion-avatar>
+        <ion-label>Ángel</ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">100</ion-badge>
+        <ion-chip>
+          <ion-avatar><img alt="Silhouette of a person's head" src="https://i.pinimg.com/236x/70/09/42/7009428ffddd7ea692bd1d7aa1157f5b.jpg" /></ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://i.pinimg.com/1200x/8c/70/8f/8c708f249055c3221972107ff1e74510.jpg">
+        </ion-avatar>
+        <ion-label>Josué</ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">100</ion-badge>
+        <ion-chip>
+          <ion-avatar><img alt="Silhouette of a person's head" src="https://i.pinimg.com/1200x/8c/70/8f/8c708f249055c3221972107ff1e74510.jpg" /></ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://i.pinimg.com/736x/63/57/f7/6357f756b2b3b2e545c54bdac2145643.jpg">
+        </ion-avatar>
+        <ion-label>Baldomero</ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">100</ion-badge>
+        <ion-chip>
+          <ion-avatar><img alt="Silhouette of a person's head" src="https://i.pinimg.com/736x/63/57/f7/6357f756b2b3b2e545c54bdac2145643.jpg" /></ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://i.pinimg.com/236x/78/fc/42/78fc42c9ad0842096f7f4f27a98b02f9.jpg">
+        </ion-avatar>
+        <ion-label>Héctor</ion-label>
+        <ion-button shape="round" color="tertiary">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-button>
+        <ion-badge color="tertiary">100</ion-badge>
+        <ion-chip>
+          <ion-avatar><img alt="Silhouette of a person's head" src="https://i.pinimg.com/236x/78/fc/42/78fc42c9ad0842096f7f4f27a98b02f9.jpg" /></ion-avatar>
+          <ion-label>Avatar Chip</ion-label>
+          <ion-icon name="close-circle"></ion-icon>
+        </ion-chip>
+      </ion-item>
+
+    </ion-list>
+
+
+      <div class="ion-text-center">
+        <ion-chip>Default</ion-chip>
+        <ion-chip color="primary">Primary</ion-chip>
+        <ion-chip color="secondary">Secondary</ion-chip>
+        <ion-chip color="tertiary">Tertiary</ion-chip>
+        <ion-chip color="success">Success</ion-chip>
+        <ion-chip color="warning">Warning</ion-chip>
+        <ion-chip color="danger">Danger</ion-chip>
+        <ion-chip color="light">Light</ion-chip>
+        <ion-chip color="medium">Medium</ion-chip>
+        <ion-chip color="dark">Dark</ion-chip>
+      </div>
+
+  </ion-content>
+
+
+

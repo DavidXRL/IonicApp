@@ -1,13 +1,111 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>ventana1</ion-title>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="tabs"></ion-back-button>
+  </ion-buttons>
+    <ion-title style="text-align: center;">Segment</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ventana1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+<ion-segment color="danger" [(ngModel)]="selectedSegment">
+  <ion-segment-button value="all">
+    <ion-label>TODOS</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="favorites">
+    <ion-label>DESTACADOS</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+<div *ngIf="selectedSegment==='all'">
+  <br>
+  <h2 style="text-align: center;">WALLPAPERS DE MINECRAFT</h2>
+  <div style="display: flex;justify-content: center;">
+  <ion-card style="text-align: center;">
+    <br>
+    <img alt="Silhouette of mountains" src="https://preview.redd.it/here-are-some-wallpapaer-i-made-fell-free-to-share-ideas-of-v0-7buzb5xztqhb1.png?width=640&crop=smart&auto=webp&s=58a2f1d72fb5cd016d68e74bcb6b2c35b95bb000" style="width: 100%; height:600px; object-fit: cover;"/>
+    <ion-card-header>
+      <ion-card-title>Paisaje de Minecraft</ion-card-title>
+      <ion-card-subtitle>Cerezos al lado de un lago</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nemo eligendi eum eius laboriosam totam minima hic rerum beatae ex corporis consequatur ipsum impedit voluptas, cupiditate nulla ad deleniti unde.
+    </ion-card-content>
+  </ion-card>
+</div>
+<br>
+<div style="display: flex;justify-content: center;">
+  <ion-card style="text-align: center;">
+    <br>
+    <img alt="Silhouette of mountains" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9868d92e-3d4d-4ef5-bb0d-fcef4e2b6ef7/dhpq4xe-f4b36555-e676-4714-b650-fb319b0df674.jpg/v1/fill/w_1280,h_732,q_75,strp/minecraft_wallpaper_high_quality_hd_4k_by_sallystinkerton_dhpq4xe-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk4NjhkOTJlLTNkNGQtNGVmNS1iYjBkLWZjZWY0ZTJiNmVmN1wvZGhwcTR4ZS1mNGIzNjU1NS1lNjc2LTQ3MTQtYjY1MC1mYjMxOWIwZGY2NzQuanBnIiwiaGVpZ2h0IjoiPD03MzIiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC85ODY4ZDkyZS0zZDRkLTRlZjUtYmIwZC1mY2VmNGUyYjZlZjdcL3NhbGx5c3RpbmtlcnRvbi00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.opxO3yy92UPIZSAi3zwc9d28j_vknvgdwaEcCfnoL_g" style="width: 100%; height:600px; object-fit: cover;"/>
+    <ion-card-header>
+      <ion-card-title>Amanecer en minecraft</ion-card-title>
+      <ion-card-subtitle>Árboles, lagos y más</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsum sequi quia. Non doloremque nihil adipisci sint enim consectetur dolore, fuga minima iure illo voluptatibus ducimus eos blanditiis a voluptatum.  </ion-card-content>
+  </ion-card>
+</div>
+<br>
+<div style="display: flex;justify-content: center;">
+  <ion-card style="text-align: center;">
+    <br>
+    <img alt="Silhouette of mountains" src="https://steamuserimages-a.akamaihd.net/ugc/2310974141604980016/B4EF3A7A2D1772DE26B1A6F51CE33A04FD8BB917/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" style="width: 100%; height:600px; object-fit: cover;"/>
+    <ion-card-header>
+      <ion-card-title>Cerezos y más cerezos</ion-card-title>
+      <ion-card-subtitle>Paisaje de Minecraft con texturas animadas</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis expedita est soluta exercitationem! Natus laboriosam sit eveniet veritatis harum explicabo soluta doloribus ea ipsa, tempore sint voluptatum, beatae alias.
+    </ion-card-content>
+  </ion-card>
+</div>
+
+
+</div>
+
+<div *ngIf="selectedSegment==='favorites'">
+  <br>
+  <h2 style="text-align: center;">DESTACADOS DE SIEMPRE</h2>
+
+<div style="display: flex;justify-content: center;">
+  <ion-card style="text-align: center;">
+    <br>
+    <img alt="Silhouette of mountains" src="https://static.planetminecraft.com/files/resource_media/screenshot/1248/minecraft_4289159.jpg" style="width: 100%; height:600px; object-fit: cover;"/>
+    <ion-card-header>
+      <ion-card-title>Steve sentado</ion-card-title>
+      <ion-card-subtitle>Steve tomando un descanso después de ir a minar presenciando el atardecer</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam, atque doloremque quidem maiores quos nemo obcaecati. Earum, possimus, voluptates eius temporibus cum ab quam repellat, nesciunt id alias nam.    </ion-card-content>
+  </ion-card>
+</div>
+
+
+<div style="display: flex;justify-content: center;">
+  <ion-card style="text-align: center;">
+    <br>
+    <img alt="Silhouette of mountains" src="https://preview.redd.it/so-i-recreated-one-of-the-most-popular-minecraft-wallpapers-v0-wmdk4f6a9gaa1.png?width=1080&crop=smart&auto=webp&s=0b223c52e6fd7a8ff55040a14542f7ec77bcc478" style="width: 100%; height:600px; object-fit: cover;"/>
+    <ion-card-header>
+      <ion-card-title>Steve Fight</ion-card-title>
+      <ion-card-subtitle>Steve luchando contra un esqueleto</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, neque ipsa ipsum nostrum obcaecati, libero quae, cum fugit voluptate est amet voluptates aliquid aspernatur id. Dolore blanditiis nam ex! Modi.    </ion-card-content>
+  </ion-card>
+</div>
+
+<div style="display: flex;justify-content: center;">
+  <ion-card style="text-align: center;">
+    <br>
+    <img alt="Silhouette of mountains" src="https://www.minecraft.net/content/dam/games/minecraft/key-art/MC-Vanilla_Media-Block-Image_PC-Bundle-Keyart_800x450.jpg"style="width: 100%; height:600px; object-fit: cover;"/>
+    <ion-card-header>
+      <ion-card-title>Minecraft Java</ion-card-title>
+      <ion-card-subtitle>Personajes de Minecraft</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repudiandae. Ducimus eaque ipsa, provident ea cumque quisquam fugiat, aut quam praesentium laboriosam nam minima eum quaerat officia vero impedit vel? </ion-card-content>
+  </ion-card>
+</div>
+</div>
 </ion-content>
